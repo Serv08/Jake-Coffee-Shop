@@ -1,0 +1,292 @@
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow-x: hidden;
+    background-image: url("../images/mundane-coffee-cropped.jpg");
+    background-size: 100%;
+    /* height: 100vh; */
+}
+/* #region topnav */
+.line-topnav {
+    display: flex;
+    position: relative;
+    margin-left: 50%;
+    height: 3px;
+    background: #1D130D;
+  }
+.topnav-fixed{
+	text-align: center;
+	height:5%;
+	padding: 1%;
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	height: 50px;
+}
+table, td{
+    text-align: center;
+    border-style: none;
+    border-collapse: collapse;
+}
+td{
+    padding: 10px;
+    font-family: "Georgia";
+}
+table{
+    margin-left: 50%;
+    width: 50%;
+    table-layout: fixed;
+}
+.topnav-fixed a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+    padding: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: -1em;
+}
+.topnav-fixed td:hover {
+    background-color: rgba(245, 150, 59, 0.3);
+    transition: 1s;
+    transition-timing-function: ease-out;
+}
+
+.image-logo{
+    position: absolute;
+    margin-right: 85%;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+/* #endregion */
+/* #region footer */
+.footer{
+    background-color: #39170A;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: none;
+
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 0.8em;
+}
+.footer img{
+    padding: 5px;
+    bottom: 2px;
+    right: 2px;
+    position: absolute;
+}
+/* #endregion */
+/* #region content home */
+.content{
+    /* BORDER */
+    border-radius: 20px;
+    /* DIMENSION */
+    width: 500px;
+    height: 190px;
+    /* MARGINS AND PADDING */
+    margin-top: 150px;
+    margin-left: 80px;
+    padding-top: 50px;
+    /* STYLE */
+    background-color: rgba(104, 59, 29, 0.7);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+    /* TEXT */
+    line-height: 2em;
+    text-align: center;   
+}
+.content:hover{
+    background-color: rgba(104, 59, 29, .8);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+#jake{
+    color: #D9B696;
+    font-size: 5em;
+    font-family: didot, serif;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.8);
+}
+#coffee-shop{
+    color: #B59C89;
+    font-size: 3em;
+    font-family: Georgia;
+    text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.8);
+}
+.line-title{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 5px;
+    background: #38180B;
+    border-radius: 50%;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.8);
+}
+#quote{
+    font-size: 1.5em;
+    font-family: Garamond;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+
+}
+
+/* #endregion */
+
+/* #region menu */
+.content-menu{
+    /* BORDER */
+    border-radius: 20px;
+    /* DIMENSION */
+    width: 500px;
+    height: 300px;
+    /* MARGINS AND PADDING */
+    margin-top: -50px;
+    margin-left: 80px;
+    /* STYLE */
+    background-color: rgba(104, 59, 29, 0.7);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10%;
+}
+#menu-text{
+    width: 50%;
+    margin-top: 120px;
+    text-align: center;
+    color: white;
+    font-family: Garamond;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.6);
+}
+.image-container {
+    width: 2000px;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+.slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+#slide-1:target ~ .image-container {
+    left: 0px;
+}
+#slide-2:target ~ .image-container {
+    left: -500px;
+}
+#slide-3:target ~ .image-container {
+    left: -1000px;
+}
+#slide-4:target ~ .image-container {
+    left: -1500px;
+}
+:target{
+    background-color: #ffa;
+}
+.buttons {
+    position: relative;
+    top: -20px;
+}
+.buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: white;
+}
+/* #endregion */
+
+/* #region music */
+.content-music{
+    /* BORDER */
+    border-radius: 20px;
+    /* DIMENSION */
+    width: 500px;
+    height: 400px;
+    /* MARGINS AND PADDING */
+    margin-top: 100px;
+    margin-left: 80px;
+    padding: 10px;
+    /* STYLE */
+    background-color: rgba(104, 59, 29, 0.7);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.content-music p{
+    font-family: Garamond;
+    color: beige;
+}
+.content-music h1{
+    font-family: Georgia;
+    color: beige;
+}
+/* SCROLL */
+::-webkit-scrollbar {
+    width: 20px;
+    height: 80%;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 opx grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #D9B696; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #39170A; 
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+/* #endregion */
+
+/* #region about */
+.content-about{
+    /* BORDER */
+    border-radius: 20px;
+    /* DIMENSION */
+    width: 500px;
+    height: 300px;
+    /* MARGINS AND PADDING */
+    margin-top: 150px;
+    margin-left: 80px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 10px; */
+    /* STYLE */
+    background-color: rgba(104, 59, 29, 0.7);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10%;
+    /* FONT */
+    color: white;
+    font-family: Garamond;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6);;
+}
+#first-sentence{
+    font-size: 2em;
+    letter-spacing: .3px;
+}
+#last-sentence{
+    font-size: 2.3em;
+    letter-spacing: .7px;
+}
+/* #endregion */
